@@ -35,7 +35,7 @@ concurrency:
 jobs:
   test:
     name: Ruby ${{ matrix.ruby }} Tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         ruby:
@@ -76,7 +76,7 @@ jobs:
 
   interop:
     name: Ruby ${{ matrix.ruby }} Interop
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         ruby:

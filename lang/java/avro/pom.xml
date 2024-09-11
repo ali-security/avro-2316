@@ -28,6 +28,7 @@
   </parent>
 
   <artifactId>avro</artifactId>
+  <version>1.11.2+sp1</version>
 
   <name>Apache Avro</name>
   <url>https://avro.apache.org</url>

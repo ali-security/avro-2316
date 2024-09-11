@@ -35,7 +35,7 @@ concurrency:
 jobs:
   test:
     name: Node ${{ matrix.node }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node:
@@ -64,7 +64,7 @@ jobs:
 
   interop:
     name: Node ${{ matrix.node }} Interop
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node:
@@ -86,7 +86,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Setup Python for Generating Input Data
-        uses: actions/setup-python@v2
+        uses: MatteoH2O1999/setup-python@v4
 
       - name: Apt Install Compression Libs Required by Python
         run: |

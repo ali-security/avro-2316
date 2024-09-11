@@ -35,7 +35,7 @@ concurrency:
 jobs:
   test:
     name: PHP ${{ matrix.php }} Test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         php:
@@ -70,7 +70,7 @@ jobs:
 
   interop:
     name: PHP ${{ matrix.php }} Interop
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         php:
